@@ -6,15 +6,12 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-window.onload = function() {
-    const greeting = document.createElement('p');
-    const hours = new Date().getHours();
-    if (hours < 12) {
-        greeting.textContent = "Good morning!";
-    } else if (hours < 18) {
-        greeting.textContent = "Good afternoon!";
-    } else {
-        greeting.textContent = "Good evening!";
-    }
-    document.querySelector('header').appendChild(greeting);
-};
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        button.style.transform = "scale(1.1)";
+    });
+
+    button.addEventListener('mouseleave', () => {
+        button.style.transform = "scale(1)";
+    });
+});
