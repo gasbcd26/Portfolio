@@ -5,6 +5,7 @@ document.querySelectorAll('nav a').forEach(link => {
         document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
     });
 });
+
 window.onload = function() {
     const greeting = document.createElement('p');
     const hours = new Date().getHours();
