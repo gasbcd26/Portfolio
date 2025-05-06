@@ -28,8 +28,11 @@ header {
 }
 
 .profile-pic {
-    max-width: 120px;
-    height: auto;
+    width: 75px; 
+    height: 75px;
+    border-radius: 50%; 
+    border: 3px solid #fff;
+    object-fit: cover; 
 }
 
 
