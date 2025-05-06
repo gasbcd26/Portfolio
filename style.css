@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@
 body {
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
     text-align: center;
 }
 
@@ -34,20 +32,18 @@ nav a {
     font-size: 18px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styling */
 section {
     padding: 40px;
     max-width: 800px;
     margin: auto;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #444;
+/* Project Cards */
+.project {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -61,8 +57,26 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
     nav ul {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        position: relative; 
     }
 }
